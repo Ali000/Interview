@@ -28,6 +28,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
+  background: #eef4ed;
 }
 
 h1 {
@@ -76,4 +78,54 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.shadoww {
+  /* border: 10px solid; */
+  /* padding: 10px; */
+  box-shadow: 0px 0px 10px;
+  /* text-shadow: 4px 4px 10px; */
+  /* background-color: #1a1a1a; */
+  text-align: center;
+  background-color: white;
+}
+.shadow-text {
+  /* color: #535bf2; */
+  text-shadow: 0px 0px 10px;
+}
+.form {
+  /* 134074 */
+  /* border: 6px solid #8da9c4; */
+  border: 3px solid #4c6785;
+  border-radius: 15px;
+  display: flex;
+  margin: 6px;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+
+  background-color: rgb(243, 253, 255);
+  color: #13315c;
+  /* font-size: large; */
+  font-weight: bold;
+  padding: 26px;
+}
+
+.form-row {
+  display: flex;
+  margin: 6px;
+  flex-direction: row;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  /* padding: 6px; */
+}
+
+.center {
+  text-align: center;
+  justify-self: center;
+}
+.label {
+  width: 30%;
+  /* margin: 6px; */
 }
