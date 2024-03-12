@@ -9,13 +9,18 @@ export default {
 </script>
 
 <template>
-  <div id="app">
-    <header>
-      <NavBar />
-    </header>
-
+  <header>
+    <NavBar />
+  </header>
+  <div>
     <main>
       <router-view></router-view>
     </main>
   </div>
 </template>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+</style>
