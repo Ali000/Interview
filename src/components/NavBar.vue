@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-  <nav>
+  <nav class="navbar justify-content-between">
     <router-link to="/">Home</router-link>
 
     <router-link to="/addCourse">Add Course</router-link>

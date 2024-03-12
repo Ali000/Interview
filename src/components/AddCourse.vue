@@ -19,7 +19,11 @@ export default {
         name: this.name,
       })
 
+      this.$refs.success.style.display = "block"
       this.name = ""
+    },
+    close() {
+      this.$refs.success.style.display = "none"
     },
   },
 }
@@ -46,4 +50,14 @@ export default {
       <button type="reset" class="btn btn-outline-danger shadoww">reset</button>
     </div>
   </form>
+
+  <div
+    ref="success"
+    class="alert alert-success alert-dismissible fade show"
+    role="alert"
+    style="display: none"
+  >
+    <strong>Course Added</strong>
+    <button type="button" class="btn-close" @click="close"></button>
+  </div>
 </template>

@@ -23,8 +23,13 @@ export default {
         }
       )
 
+      this.$refs.success.style.display = "block"
+
       this.name = ""
       this.email = ""
+    },
+    close() {
+      this.$refs.success.style.display = "none"
     },
   },
 }
@@ -70,4 +75,14 @@ export default {
       <!-- <label class="label"></label> -->
     </div>
   </form>
+
+  <div
+    ref="success"
+    class="alert alert-success alert-dismissible fade show"
+    role="alert"
+    style="display: none"
+  >
+    <strong>Student Added</strong>
+    <button type="button" class="btn-close" @click="close"></button>
+  </div>
 </template>
