@@ -1,12 +1,19 @@
 <script>
+import NavBar from "./components/NavBar.vue"
 export default {
   name: "App",
-  components: {},
+  components: {
+    NavBar,
+  },
 }
 </script>
 
 <template>
-  <div>
-    <HomePage />
+  <div id="app">
+    <header>
+      <NavBar />
+    </header>
+
+    <main></main>
   </div>
 </template>

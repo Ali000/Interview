@@ -1,11 +1,9 @@
 <script>
 export default {
-  name: "HomePage",
+  name: "AddCourse",
 }
 </script>
-
 <template>
-  <div>
-    <div></div>
-  </div>
+  <h1>hi</h1>
 </template>
+<style></style>
