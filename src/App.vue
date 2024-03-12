@@ -1,3 +1,14 @@
-<script></script>
+<script>
 
-<template></template>
+export default {
+    name: "App",
+    components: {
+    },
+}
+</script>
+
+<template>
+    <div>
+        
+    </div>
+</template>
