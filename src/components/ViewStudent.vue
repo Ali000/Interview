@@ -76,7 +76,7 @@ const BASE_URL = import.meta.env.VITE_BASE_URL
             </div>
         </form>
     </div>
-    <div v-if="student.length > 1">
+    <div v-if="gpa">
         <div class="card mt-5 mx-auto" style="width: 24rem;">
             <div class="card-header">
                 Courses Grades
