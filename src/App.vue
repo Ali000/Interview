@@ -1,11 +1,12 @@
 <script>
-// @import "bootstrap/scss/bootstrap";
+export default {
+  name: "App",
+  components: {},
+}
 </script>
 
 <template>
-  <h3>help</h3>
-  <button>help me</button>
-  <!-- <form action="">
-    <input type="text" />
-  </form> -->
+  <div>
+    <HomePage />
+  </div>
 </template>

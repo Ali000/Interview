@@ -1,4 +1,5 @@
 <script>
+import axios from "axios"
 export default {
   name: "AddCourse",
   // props: { name: {} },
@@ -10,8 +11,17 @@ export default {
     handleChange(e) {
       this.name = e.target.value
     },
+    async handleSubmit(e) {
+      e.preventDefault()
+      // axios call to the backend
+      // await axios.post("get")
+    },
   },
 }
 </script>
 
-<template></template>
+<template>
+  <form action="">
+    <input type="text" />
+  </form>
+</template>
