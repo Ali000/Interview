@@ -4,7 +4,7 @@ export default {
   name: "AddCourse",
   // props: { name: {} },
   data: function () {
-    return { course: { name: "" } }
+    return { name: "" }
   },
   // mounted: function() {},
   methods: {
@@ -14,15 +14,35 @@ export default {
     async handleSubmit(e) {
       e.preventDefault()
       // axios call to the backend
-      // await axios.post("get")
+
+      const res = await axios.post(`${import.meta.env.VITE_BASE_URL}/courses`, {
+        name: this.name,
+      })
+
+      this.name = ""
     },
   },
 }
 </script>
 
 <template>
-  <form action="">
-    <input type="text" />
+  <form action="" class="form margin">
+    <label for="" class="form-label">Name:</label>
+    <input
+      type="text"
+      @change="handleChange"
+      :value="this.name"
+      class="form-control"
+    />
+    <div class="form-row margin">
+      <button
+        type="submit"
+        class="btn btn-outline-success shadoww"
+        @click="handleSubmit"
+      >
+        Add
+      </button>
+      <button type="reset" class="btn btn-outline-danger shadoww">reset</button>
+    </div>
   </form>
 </template>
-
