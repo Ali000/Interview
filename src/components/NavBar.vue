@@ -1,7 +1,6 @@
 <script>
 export default {
-  name: "StudentWithGPA",
-  data: () => ({}),
+  name: "NavBar",
 }
 </script>
 <template></template>
