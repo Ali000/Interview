@@ -25,3 +25,4 @@ export default {
     <input type="text" />
   </form>
 </template>
+
