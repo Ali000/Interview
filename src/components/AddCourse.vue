@@ -30,15 +30,19 @@ export default {
 </script>
 
 <template>
-  <form action="" class="form margin">
-    <label for="" class="form-label">Add Course</label>
-    <input
-      type="text"
-      @change="handleChange"
-      :value="this.name"
-      class="form-control center shadoww"
-      placeholder="Course Name"
-    />
+  <!-- <div class="flex-row margin"> -->
+  <h2>Add New Course</h2>
+  <form action="" class="form shadoww margin">
+    <div class="form-row margin">
+      <label for="" class="">Name:</label>
+      <input
+        type="text"
+        @change="handleChange"
+        :value="this.name"
+        class="form-control center shadoww"
+        placeholder="Course Name"
+      />
+    </div>
     <div class="form-row margin">
       <button
         type="submit"
@@ -60,4 +64,5 @@ export default {
     <strong>Course Added</strong>
     <button type="button" class="btn-close" @click="close"></button>
   </div>
+  <!-- </div> -->
 </template>
