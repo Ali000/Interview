@@ -27,12 +27,13 @@ export default {
 
 <template>
   <form action="" class="form margin">
-    <label for="" class="form-label">Name:</label>
+    <label for="" class="form-label">Add Course</label>
     <input
       type="text"
       @change="handleChange"
       :value="this.name"
-      class="form-control"
+      class="form-control center shadoww"
+      placeholder="Course Name"
     />
     <div class="form-row margin">
       <button
