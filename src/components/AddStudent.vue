@@ -36,6 +36,7 @@ export default {
 </script>
 
 <template>
+  <h2>Add New Student</h2>
   <form @submit="handleSubmit" class="form shadoww margin">
     <div class="form-row margin">
       <label for="name" class="label">Name:</label>
