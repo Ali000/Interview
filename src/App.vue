@@ -14,6 +14,8 @@ export default {
       <NavBar />
     </header>
 
-    <main></main>
+    <main>
+      <router-view></router-view>
+    </main>
   </div>
 </template>
