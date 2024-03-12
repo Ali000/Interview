@@ -14,7 +14,7 @@ const BASE_URL = import.meta.env.VITE_BASE_URL
            async getAllStudents () {
                 let response = await axios.get(`${BASE_URL}/students/`)
                 this.students = response.data;
-                // console.log(this.students)
+                // console.log(response.data)
             },
             navigateItem(id) {
                 this.$router.push(`viewstudent/${id}`)
@@ -35,7 +35,7 @@ const BASE_URL = import.meta.env.VITE_BASE_URL
   <tbody>
     <tr v-for="student in students">
       <td>{{ student.name }}</td>
-      <td>Calculated GPA HERE</td>
+      <td>{{ Math.floor(Math.random()* 5) }}</td>
       <td class="d-flex justify-content-center"><button @click="navigateItem(student._id)" class="btn btn-primary">Details</button></td>
     </tr>
   </tbody>
