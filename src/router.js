@@ -7,7 +7,6 @@ import Courses from "./components/Courses.vue"
 
 import AddStudent from "./components/AddStudent.vue"
 
-
 const routes = [
   {
     path: "/",
@@ -20,15 +19,14 @@ const routes = [
     name: "AddCourse",
   },
   {
-
-    path: "/course",
+    path: "/courses",
     component: Courses,
     name: "Courses",
-
+  },
+  {
     path: "/addStudent",
     component: AddStudent,
     name: "AddStudent",
-
   },
 ]
 
