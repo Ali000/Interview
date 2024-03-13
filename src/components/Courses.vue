@@ -46,15 +46,26 @@ export default {
 }
 </script>
 <template>
-  <div class="container">
-    <input
-      placeholder="search course"
-      @keyup="search"
-      :value="searchQuery"
-      type="text"
-    /><button @click="search">search</button>
-    <div v-for="course in searchedResults" :value="course._id">
-      <h4 @click="ViewCourse(course._id,course.name)">{{ course.name }}</h4>
+  <div class="form shadoww">
+    <div class="form-row search-div">
+      <input
+        class="form-control shadoww search"
+        placeholder="search course"
+        @keyup="search"
+        :value="searchQuery"
+        type="text"
+      /><button @click="search" class="btn btn-outline-success shadoww">
+        search
+      </button>
+    </div>
+    <div
+      class="course-div"
+      v-for="course in searchedResults"
+      :value="course._id"
+    >
+      <h4 class="course-name" @click="ViewCourse(course._id, course.name)">
+        {{ course.name }}
+      </h4>
     </div>
   </div>
 </template>

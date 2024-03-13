@@ -23,13 +23,23 @@ export default {
 </script>
 
 <template>
-  <h1>{{ this.$route.params.courseName }}</h1>
+  <h2 class="h2">{{ this.$route.params.courseName }}</h2>
   <div>
     <h4 v-for="student in students" :value="student.studentId.name">
-      {{ student.studentId.name }} {{ student.letter }}
+      <b class="red">Student Name:</b> {{ student.studentId.name }}
+      <b class="red">Grade:</b>
+      {{ student.letter }}
     </h4>
     <h4 v-if="!students[0]?.studentId?.name">
       No Students Registered For This Course
     </h4>
   </div>
 </template>
+<style>
+.red {
+  text-decoration-line: underline;
+}
+.h2 {
+  padding-top: 25px;
+}
+</style>
