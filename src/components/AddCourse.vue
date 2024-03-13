@@ -39,7 +39,7 @@ export default {
         type="text"
         @change="handleChange"
         :value="this.name"
-        class="form-control center shadoww"
+        class="form-control center shadoww search"
         placeholder="Course Name"
       />
     </div>

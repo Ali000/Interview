@@ -45,7 +45,7 @@ export default {
         type="text"
         @change="handleChange"
         :value="this.name"
-        class="form-control shadoww"
+        class="form-control shadoww search"
         placeholder="Student Name"
       />
     </div>
@@ -56,7 +56,7 @@ export default {
         type="email"
         @change="handleChange"
         :value="this.email"
-        class="form-control shadoww"
+        class="form-control shadoww search"
         placeholder="Student@Email.com"
       />
     </div>
