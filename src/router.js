@@ -4,7 +4,7 @@ import AddCourse from "./components/AddCourse.vue"
 import ViewStudent from "./components/ViewStudent.vue"
 import Courses from "./components/Courses.vue"
 import AddStudent from "./components/AddStudent.vue"
-
+import CourseInfo from "./components/CourseInfo.vue"
 const routes = [
   {
     path: "/",
@@ -17,7 +17,9 @@ const routes = [
     name: "AddCourse",
   },
   {
-    path:"/viewstudent/:student_id", component: ViewStudent, name: "ViewStudent"
+    path: "/viewstudent/:student_id",
+    component: ViewStudent,
+    name: "ViewStudent",
   },
   {
     path: "/courses",
@@ -28,6 +30,11 @@ const routes = [
     path: "/addStudent",
     component: AddStudent,
     name: "AddStudent",
+  },
+  {
+    path: "/view/:id/:courseName",
+    component: CourseInfo,
+    name: "CourseInfo",
   },
 ]
 
